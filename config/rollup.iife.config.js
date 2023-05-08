@@ -23,7 +23,8 @@ export default {
         format: "iife",
         sourcemap: "inline",
         globals: {
-            os: "null"
+            os: "null",
+            "crypto": "cryptoBrowserify"
         },
         name: "snarkjs"
     },
@@ -31,7 +32,6 @@ export default {
         virtual({
             fs: empty,
             os: empty,
-            crypto: empty,
             readline: empty,
             ejs: empty,
             events: empty,
